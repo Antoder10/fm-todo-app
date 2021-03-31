@@ -16,9 +16,9 @@ const TodoList = ({todos, deleteTodo, clearCompletedTodos, clearAllTodos, toggle
           />
         )
       })}
-      <div className="grid grid-cols-3 p-4 text-sm">
-        <span className="font-bold">{todos.length} items left</span>
-        <div className="text-center">
+      <div className="flex flex-col items-center sm:grid sm:grid-cols-3 p-4 text-sm">
+        <span className="font-bold mb-4">{todos.length} items left</span>
+        <div className="text-center mb-4">
           <button className="active:text-dark-desaturated-blue" name="all" onClick={(e) => filterTodos(e.target.name)}>All</button>
           <button className="mx-4" name="active" onClick={(e) => filterTodos(e.target.name)}>Active</button>
           <button className="" name="completed" onClick={(e) => filterTodos(e.target.name)}>Completed</button>

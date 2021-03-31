@@ -1,5 +1,10 @@
 module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  purge: {
+    content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+    options: {
+      safelist: ['header-desktop-dark', 'header-mobile-dark']
+    },
+  },
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     minWidth: {
