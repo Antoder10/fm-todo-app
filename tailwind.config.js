@@ -35,7 +35,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {}
+    extend: {
+      backgroundImage: ['dark']
+    }
   },
   plugins: [
     require('@tailwindcss/forms')
